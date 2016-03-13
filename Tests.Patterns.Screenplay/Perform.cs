@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Tests.Patterns.Screenplay
 {
-    public class Perform
+    public abstract class Perform
     {
+        public abstract void As(Actor actor);
     }
 }
