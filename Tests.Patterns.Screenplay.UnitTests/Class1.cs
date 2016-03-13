@@ -16,10 +16,10 @@ namespace Tests.Patterns.Screenplay.UnitTests
         public void ActorNamedJohnCanPerformTheOperationUsingATool()
         {
             Actor.Named("John")
-                .Can(PerformOperation.Using(A.Tool()));
+                .Can(PerformTheOperation.Using(A.Tool()));
         }
 
-        static class PerformOperation
+        static class PerformTheOperation
         {
             public static Perform Using(object tool)
             {
